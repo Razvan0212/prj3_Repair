@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MapController">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+        </Menu>
+    </MenuBar>
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <VBox prefHeight="400.0" prefWidth="640.0">
+            <AnchorPane VBox.vgrow="ALWAYS">
+                <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Pane layoutY="3.0" prefHeight="372.0" prefWidth="517.0">
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="101.0" layoutX="-5.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="523.0" />
+                    <Pane fx:id="bridge" layoutX="166.0" layoutY="131.0">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="107.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="181.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="80.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="21.0" />
+                    </Pane>
+                    <Pane layoutY="-9.0">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009000" height="143.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="173.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009000" height="143.0" layoutX="344.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="173.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009000" height="164.0" layoutX="344.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="173.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009000" height="164.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="173.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="149.0" layoutX="167.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="181.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="164.0" layoutX="166.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="181.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="248.0" layoutY="367.0" stroke="BLACK" strokeType="INSIDE" width="21.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="248.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="21.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="248.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" width="21.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="248.0" layoutY="96.0" stroke="BLACK" strokeType="INSIDE" width="21.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="248.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="21.0" />
+                        <Pane layoutX="361.0" layoutY="282.0">
+                            <Rectangle arcHeight="5.0" arcWidth="5.0" height="120.0" layoutY="-28.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                            <Circle fx:id="redDown" fill="#8a0000" layoutX="23.0" layoutY="-6.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                            <Circle fx:id="greenDown" fill="DARKGREEN" layoutX="23.0" layoutY="60.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                            <Circle fx:id="yellowDown" fill="#a49700" layoutX="23.0" layoutY="28.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        </Pane>
+                        <ImageView fx:id="boat" fitHeight="48.0" fitWidth="87.0" layoutX="0" layoutY="171.0" preserveRatio="true" rotate="180.0">
+                            <Image url="@../Images/boat.png" />
+                        </ImageView>
+                    </Pane>
+                    <Pane layoutX="113.0" layoutY="38.0">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="120.0" layoutY="-28.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                        <Circle fx:id="redUp" fill="#8a0000" layoutX="23.0" layoutY="-6.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="greenUp" fill="DARKGREEN" layoutX="23.0" layoutY="60.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fx:id="yellowUp" fill="#a49700" layoutX="23.0" layoutY="28.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+                    </Pane>
+                </Pane>
+                <Button fx:id="goButto" layoutX="560.0" layoutY="29.0" mnemonicParsing="false" onAction="#start" text="GO" />
+            </AnchorPane>
+        </VBox>
+    </AnchorPane>
+</VBox>
